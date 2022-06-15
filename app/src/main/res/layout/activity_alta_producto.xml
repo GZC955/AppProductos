@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AltaProducto">
+
+    <EditText
+        android:id="@+id/colorRegistrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:hint="Color del Producto"
+        app:layout_constraintTop_toBottomOf="@+id/tallaRegistrada"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/nombreRegistrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:hint="Nombre del Producto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/tallaRegistrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:hint="Talla del Producto"
+        app:layout_constraintTop_toBottomOf="@+id/nombreRegistrado"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/precioRegistrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:hint="Precio del Producto"
+        app:layout_constraintTop_toBottomOf="@+id/colorRegistrado"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/botonAltaBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="Alta de Prodcto en BD"
+        app:layout_constraintTop_toBottomOf="@+id/precioRegistrado"
+        tools:layout_editor_absoluteX="173dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
